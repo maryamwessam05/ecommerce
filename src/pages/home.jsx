@@ -17,6 +17,7 @@ import prod9 from "../assets/prod09.png"
 import prod10 from "../assets/prod10.png"
 import prod11 from "../assets/prod11.png"
 import prod12 from "../assets/prod12.png"
+import Footer from '../components/layout/footer';
 
 
 const Home = () => {
@@ -56,6 +57,8 @@ const Home = () => {
             <Product img={prod12} name="VR Headset" desc="Immersive virtual reality headset with controllers" price="$299.99" rating="4.8" stock="Stock: 27" />
 
     </div>
+
+    <Footer />
 
 
         
