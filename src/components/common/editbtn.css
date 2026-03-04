@@ -61,3 +61,46 @@ border: 1px solid #0A0A0A;
 transform: translateY(-3px);
 
 }
+
+.editdet{
+    display: flex;
+padding: 8px 0;
+justify-content: center;
+align-items: center;
+gap: 9px;
+flex: 1 0 0;
+border-radius: 8px;
+background: #030213;
+color: #FFF;
+text-align: center;
+font-family: Inter;
+font-size: 14px;
+font-style: normal;
+font-weight: 500;
+line-height: 20px; /* 142.857% */
+width: 50%;
+letter-spacing: -0.15px;
+height: fit-content;
+
+}
+
+.deleted{
+    display: flex;
+padding: 8px 0;
+height: fit-content;
+justify-content: center;
+align-items: center;
+gap: 9px;
+flex: 1 0 0;
+border-radius: 8px;
+background: #D4183D;
+color: #FFF;
+text-align: center;
+font-family: Inter;
+font-size: 14px;
+width: 50%;
+font-style: normal;
+font-weight: 500;
+line-height: 20px; /* 142.857% */
+letter-spacing: -0.15px;
+}

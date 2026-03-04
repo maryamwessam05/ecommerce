@@ -1,0 +1,23 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+.back{
+    display: inline-flex;
+padding: 8px 12px;
+justify-content: flex-start;
+width: 100%;
+    align-items: center;
+gap: 8px;
+color: #0A0A0A;
+text-align: center;
+font-family: Inter;
+font-size: 14px;
+font-style: normal;
+font-weight: 500;
+line-height: 20px; /* 142.857% */
+letter-spacing: -0.15px;
+}

@@ -18,7 +18,7 @@ import prod10 from "../assets/prod10.png"
 import prod11 from "../assets/prod11.png"
 import prod12 from "../assets/prod12.png"
 import Footer from '../components/layout/footer';
-
+import { Link } from "react-router-dom";
 
 const Home = () => {
     return ( 

@@ -1,0 +1,135 @@
+*{
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+.content{
+    padding: 32px;
+    display: flex;
+flex-direction: column;
+justify-content: center;
+align-items: flex-start;
+gap: 24px;
+}
+
+.productdet{
+    display: flex;
+align-items: center;
+gap: 49px;
+width: 100%;
+    justify-content: center;
+}
+
+.details{
+    display: flex;
+flex-direction: column;
+align-items: flex-start;
+gap: 24px;
+align-self: stretch;
+}
+.name{
+    display: flex;
+flex-direction: column;
+align-items: flex-start;
+gap: 15px;
+align-self: stretch;
+}
+
+.details h1{
+    color: #0A0A0A;
+font-family: Inter;
+font-size: 30px;
+font-style: normal;
+font-weight: 700;
+line-height: 36px; /* 120% */
+letter-spacing: 0.396px;
+}
+
+.rating{
+    display: flex;
+align-items: center;
+gap: 8px;
+} 
+
+.rate span{
+    color: #0A0A0A;
+font-family: Inter;
+font-size: 18px;
+font-style: normal;
+font-weight: 600;
+line-height: 28px; /* 155.556% */
+letter-spacing: -0.439px;
+}
+
+.ratings p{
+    color: #62748E;
+font-family: Inter;
+font-size: 16px;
+font-style: normal;
+font-weight: 400;
+line-height: 24px; /* 150% */
+letter-spacing: -0.312px;
+}
+
+.details h2{
+    color: #155DFC;
+font-family: Inter;
+font-size: 36px;
+font-style: normal;
+font-weight: 700;
+line-height: 40px; /* 111.111% */
+letter-spacing: 0.369px;
+}
+
+.desc{
+    display: flex;
+
+padding: 24px;
+flex-direction: column;
+align-items: flex-start;
+gap: 12px;
+border-radius: 14px;
+border: 1px solid rgba(0, 0, 0, 0.10);
+background: #FFF;
+}
+
+.desc h3{
+    color: #0A0A0A;
+font-family: Inter;
+font-size: 20px;
+font-style: normal;
+font-weight: 600;
+line-height: 28px; /* 140% */
+letter-spacing: -0.449px;
+}
+
+.desc p{
+    color: #314158;
+font-family: Inter;
+font-size: 16px;
+font-style: normal;
+font-weight: 400;
+line-height: 26px; /* 162.5% */
+letter-spacing: -0.312px;
+}
+
+.productdetails{
+    display: flex;
+padding: 24px;
+flex-direction: column;
+align-items: flex-start;
+gap: 16px;
+flex: 1 0 0;
+width: 100%;
+border-radius: 14px;
+border: 1px solid rgba(0, 0, 0, 0.10);
+background: #FFF;
+}
+
+.btnactions{
+    display: flex;
+    gap: 8px;
+    width: 100%;
+    
+}
