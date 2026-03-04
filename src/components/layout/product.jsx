@@ -1,0 +1,36 @@
+import React from 'react';
+import "./product.css"
+import Prodtag from '../common/prodtag';
+import star from "../../assets/Star.svg";
+import edit from "../../assets/Edit.svg";
+import trash from "../../assets/Trash.svg";
+import Edit from '../common/editbtn';
+
+const Product = (props) => {
+    return ( 
+        <>
+        <div className="product">
+            <img src={props.img} alt="" />
+            <div className="prodetails">
+                <Prodtag category="Home & Kitchen" />
+                <h1>{props.name}</h1>
+                <p>{props.desc}</p>
+                <div className="rate">
+                    <img src={star} alt="" />
+                    <span>{props.rating}</span>
+                </div>
+                <h4>{props.price}</h4>
+                <h6>{props.stock}</h6>
+            </div>
+
+            <div className="actions">
+                <Edit style="edit" icon={edit} text="Edit" />
+                <Edit style="delete" icon={trash} text="Delete" />
+            </div>
+        </div>
+        
+        </>
+     );
+}
+ 
+export default Product;

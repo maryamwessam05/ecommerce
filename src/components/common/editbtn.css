@@ -1,0 +1,63 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+.edit{
+    display: flex;
+padding: 6px 0;
+justify-content: center;
+align-items: center;
+gap: 4px;
+flex: 1 0 0;
+border-radius: 8px;
+border: 1px solid rgba(0, 0, 0, 0.10);
+background: #FFF;
+color: #0A0A0A;
+text-align: center;
+font-family: Inter;
+font-size: 14px;
+font-style: normal;
+font-weight: 500;
+width: 100%;
+transition: all 300ms ease;
+cursor: pointer;
+line-height: 20px; /* 142.857% */
+letter-spacing: -0.15px;
+}
+
+.delete{
+        display: flex;
+padding: 6px 0;
+justify-content: center;
+align-items: center;
+gap: 4px;
+flex: 1 0 0;
+width: 100%;
+border-radius: 8px;
+border: 1px solid rgba(0, 0, 0, 0.10);
+background: #FFF;
+color: #E7000B;
+text-align: center;
+font-family: Inter;
+font-size: 14px;
+font-style: normal;
+font-weight: 500;
+line-height: 20px; /* 142.857% */
+letter-spacing: -0.15px;
+transition: all 300ms ease;
+cursor: pointer;
+}
+
+.delete:hover{
+border: 1px solid #E7000B;
+transform: translateY(-3px);
+
+}
+
+.edit:hover{
+border: 1px solid #0A0A0A;
+transform: translateY(-3px);
+
+}
