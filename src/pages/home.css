@@ -3,3 +3,27 @@
     padding: 0;
     box-sizing: border-box;
 }
+
+.header{
+    display: flex;
+height: 36px;
+justify-content: space-between;
+align-items: center;
+flex-shrink: 0;
+align-self: stretch;
+padding: 32px;
+}
+
+.header h1{
+    color: #0A0A0A;
+font-family: Inter;
+font-size: 30px;
+font-style: normal;
+font-weight: 700;
+line-height: 36px; /* 120% */
+letter-spacing: 0.396px;
+}
+
+.addcont{
+    width: 130px;
+}
