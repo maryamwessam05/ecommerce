@@ -10,6 +10,7 @@ import Footer from '../components/layout/footer';
 import { Link } from "react-router-dom";
 
 const Home = () => {
+    const [loading, setLoading] = useState(true);
     const [data, setData] = useState([""]);
 
     useEffect(() => {
@@ -17,17 +18,19 @@ const Home = () => {
             fetch('https://dummyjson.com/products')
             .then(res => res.json())
             .then(res => setData(res.products) );
-        }
 
+        }
+        
         getProducts();
+        setLoading(false);
 
 
     },[])
 
     console.log(data)
 
-
-    return ( 
+    if (loading) return <p>Loading...</p>
+    else return ( 
         <>
         <Navbar />
         <div className="header">
@@ -51,9 +54,9 @@ const Home = () => {
         </div>
 
         <div className="productlist">
-
+        
         {data.map((item) =>{
-            return <Product img={item.images} name={item.title} desc={item.description} price={item.price} rating={item.rating} stock={item.title} category={item.category}/>
+            return <Product img={item.images} name={item.title} desc={item.description} price={item.price} rating={item.rating} stock={item.title} category={item.category} url={'/details/'+item.id}/>
         }
         )}
         </div>

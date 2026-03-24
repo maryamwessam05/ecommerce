@@ -26,6 +26,7 @@ font-style: normal;
 font-weight: 500;
 line-height: 24px; /* 150% */
 letter-spacing: -0.312px;
+text-transform: capitalize;
 }
 
 .detailrow h3{
@@ -34,6 +35,7 @@ font-family: Inter;
 font-size: 16px;
 font-style: normal;
 font-weight: 400;
+text-transform: capitalize;
 line-height: 24px; /* 150% */
 letter-spacing: -0.312px;
 }

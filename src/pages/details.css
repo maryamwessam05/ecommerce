@@ -21,6 +21,10 @@ width: 100%;
     justify-content: center;
 }
 
+.prductimage{
+    width: 50%;
+}
+
 .details{
     display: flex;
 flex-direction: column;

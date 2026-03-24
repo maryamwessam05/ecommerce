@@ -11,7 +11,7 @@ const Routess = () => {
         <Routes>
             <Route path='/' element={<Home />} />
             <Route path='/results' element={<Results />} />
-            <Route path='/details' element={<Details />} />
+            <Route path='/details/:id' element={<Details />} />
             <Route path='/addproduct' element={<AddProduct />} />
 
 
