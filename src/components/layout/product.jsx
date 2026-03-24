@@ -10,9 +10,9 @@ const Product = (props) => {
     return ( 
         <>
         <div className="product">
-            <img src={props.img} alt="" />
+            <img className='prodimg' src={props.img} alt="" />
             <div className="prodetails">
-                <Prodtag category="Home & Kitchen" />
+                <div className="prodtag">{props.category}</div>
                 <h1>{props.name}</h1>
                 <p>{props.desc}</p>
                 <div className="rate">

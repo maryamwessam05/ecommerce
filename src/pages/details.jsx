@@ -12,6 +12,7 @@ import Edit from '../components/common/editbtn';
 import editw from "../assets/Editw.svg"
 import trash2 from "../assets/Trash2.svg"
 import Footer from '../components/layout/footer';
+import { Link } from "react-router-dom";
 
 
 
@@ -20,7 +21,9 @@ const Details = () => {
         <>
             <Navbar />
             <div className="content">
+                <Link to="/">
                 <Back />
+                </Link>
                 <div className="productdet">
                     <img src={det} alt="" />
 
