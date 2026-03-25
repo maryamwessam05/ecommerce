@@ -119,3 +119,10 @@ letter-spacing: -0.15px;
     text-transform: capitalize;
     
 }
+
+.product a {
+    display: block;
+    width: 100%;
+    text-decoration: none;
+    color: inherit;
+}

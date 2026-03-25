@@ -84,6 +84,7 @@ color: #FFF;
 text-align: center;
 font-family: Inter;
 font-size: 14px;
+width: 100%;
 font-style: normal;
 font-weight: 500;
 line-height: 20px; /* 142.857% */
@@ -106,6 +107,7 @@ border: 1px solid rgba(0, 0, 0, 0.10);
 background: #FFF;
 transition: all 300ms ease;
 cursor: pointer;
+width: 100%;
 }
 
 .addprod:hover{

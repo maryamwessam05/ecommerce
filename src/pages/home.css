@@ -79,3 +79,9 @@ width: 100%;
 a {
     text-decoration: none;
   }
+
+  .header a {
+    display: block;
+    text-decoration: none;
+    color: inherit;
+}

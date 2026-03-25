@@ -27,8 +27,12 @@ const Product = (props) => {
             </Link>
 
             <div className="actions">
+                <Link to="/editproduct">
                 <Edit style="edit" icon={edit} text="Edit" />
+                </Link>
+                <Link>
                 <Edit style="delete" icon={trash} text="Delete" />
+                </Link>
             </div>
         </div>
         
