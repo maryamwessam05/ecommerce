@@ -1,6 +1,5 @@
 import React from 'react';
 import "./product.css"
-import Prodtag from '../common/prodtag';
 import star from "../../assets/Star.svg";
 import edit from "../../assets/Edit.svg";
 import trash from "../../assets/Trash.svg";

@@ -1,6 +1,12 @@
 import React from 'react';
 import "./addproduct.css"
 import Navbar from '../components/layout/navbar';
+import Back from '../components/common/back';
+import FormInput from '../components/common/forminput';
+import plus from "../assets/Plus2.svg"
+import { Link } from 'react-router-dom';
+import Footer from '../components/layout/footer';
+
 
 const AddProduct = () => {
     return ( 
@@ -8,9 +14,43 @@ const AddProduct = () => {
         <Navbar />
         <div className="contentadd">
             <div className="wrap">
+                <Link to="/">
+                
+                <Back />
+                </Link>
+
+                <div className="addform">
+                    <h1>Add New Product</h1>
+                    <div className="formholders">
+                     <FormInput style="input" label="Title *" placeholder="Enter Product Title" />
+                     <FormInput style="inputlong" label="Description *" placeholder="Enter product description" />
+                     <FormInput style="input" label="Category *" placeholder="Select a category" />
+                    <div className="formrow">
+                        <FormInput style="input" label="Price ($) *" placeholder="0.00" />
+                        <FormInput style="input" label="Rating (0-5) *" placeholder="0.0" />
+                    </div>
+                    <div className="formrow">
+                        <FormInput style="input" label="Stock *" placeholder="0" />
+                        <FormInput style="input" label="Weight (kg) *" placeholder="0.00" />
+                    </div>
+
+                    </div>
+                    <div className="formbtns">
+                        <div className="addprod">
+                            <img src={plus} alt="" />
+                            <span>Add Product</span>
+                        </div>
+                        <div className="cancel">
+                            Cancel
+                        </div>
+                    </div>
+                
+                </div>
                 
             </div>
         </div>
+
+        <Footer />
         
         
         </>

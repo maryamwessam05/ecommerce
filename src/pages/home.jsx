@@ -8,21 +8,24 @@ import Product from '../components/layout/product';
 
 import Footer from '../components/layout/footer';
 import { Link } from "react-router-dom";
+import DeleteOverlay from './delete';
 
 const Home = () => {
     const [loading, setLoading] = useState(true);
     const [data, setData] = useState([""]);
+    
 
     useEffect(() => {
         const getProducts = () =>{
             fetch('https://dummyjson.com/products')
             .then(res => res.json())
-            .then(res => setData(res.products) );
-
+            .then(res => {
+            setData(res.products);
+            setLoading(false);})
         }
         
         getProducts();
-        setLoading(false);
+        
 
 
     },[])
@@ -32,37 +35,42 @@ const Home = () => {
     if (loading) return <p>Loading...</p>
     else return ( 
         <>
-        <Navbar />
-        <div className="header">
-            <h1>Products</h1>
-            <Link to="/addproduct">
-                <div className="addcont">
-                    <Add />
-                </div>
-            
-            </Link>
-        </div>
-
-        <div className="searchings">
-            <Search />
-
-            <div className="dds">
-                <DropDown title="Category" cat="All Categories" />
-                <DropDown title="Sort By" cat="Title (A-Z)" />
+        <main>
+            <Navbar />
+            <div className="header">
+                <h1>Products</h1>
+                <Link to="/addproduct">
+                    <div className="addcont">
+                        <Add />
+                    </div>
+                
+                </Link>
             </div>
 
-        </div>
+            <div className="deletoverlay">
+                <DeleteOverlay />
+            </div>
+            <div className="searchings">
+                <Search />
 
-        <div className="productlist">
-        
-        {data.map((item) =>{
-            return <Product img={item.images} name={item.title} desc={item.description} price={item.price} rating={item.rating} stock={item.title} category={item.category} url={'/details/'+item.id}/>
-        }
-        )}
-        </div>
-        
+                <div className="dds">
+                    <DropDown title="Category" cat="All Categories" />
+                    <DropDown title="Sort By" cat="Title (A-Z)" />
+                </div>
 
-    <Footer />
+            </div>
+
+            <div className="productlist">
+            
+            {data.map((item) =>{
+                return <Product img={item.images} name={item.title} desc={item.description} price={item.price} rating={item.rating} stock={item.title} category={item.category} url={'/details/'+item.id}/>
+            }
+            )}
+            </div>
+            
+
+            <Footer />
+        </main>
 
 
         
